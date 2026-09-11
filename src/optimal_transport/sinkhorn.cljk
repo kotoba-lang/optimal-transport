@@ -43,7 +43,7 @@
   `js/Math.exp`/`js/Math.log`/`js/Math.abs` in ClojureScript, the same
   convention as `character.math`
   (`orgs/kotoba-lang/character/src/character/math.cljc`). Tests run via
-  `clojure -M:test` for CI convenience -- every sibling `.cljc` repo in this
+  `kbb -M:test` for CI convenience -- every sibling `.cljc` repo in this
   org does the same (pragmatic JVM test harness, not a runtime-priority
   statement).")
 
