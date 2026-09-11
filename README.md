@@ -115,7 +115,7 @@ ClojureScript > `nbb`, JVM/`bb` demoted to compat-only,
 sinkhorn.cljc`) uses `#?(:clj ... :cljs ...)` reader conditionals for
 `Math/exp`/`Math/log`/`Math/abs` vs. `js/Math.exp`/`js/Math.log`/
 `js/Math.abs`, the same convention as `character.math`. Tests run via
-`clojure -M:test` for CI convenience, matching every sibling `.cljc` repo
+`kbb -M:test` for CI convenience, matching every sibling `.cljc` repo
 in this org.
 
 No runtime dependencies -- Sinkhorn only needs scalar `exp`/`log`/`+`/`-`/
@@ -126,6 +126,6 @@ shared-math dependency.
 ## Testing
 
 ```bash
-clojure -M:test    # cognitect test-runner
-clojure -M:lint     # clj-kondo, --fail-level error
+kbb -M:test    # cognitect test-runner
+kbb -M:lint     # clj-kondo, --fail-level error
 ```
