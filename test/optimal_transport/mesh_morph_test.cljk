@@ -4,7 +4,7 @@
   monotonic interpolation across intermediate t, and a genuine different-
   vertex-count case (the actual reason to reach for OT here instead of
   index-aligned linear blend shapes)."
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [optimal-transport.mesh-morph :as morph]))
 
 (defn- abs* [x] (if (neg? x) (- x) x))
