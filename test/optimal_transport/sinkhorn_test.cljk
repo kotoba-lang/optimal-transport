@@ -4,7 +4,7 @@
   concentration for identical point sets, and a cross-check against
   `sinkhorn-naive` at a moderate epsilon where the naive form is still
   numerically safe."
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [optimal-transport.sinkhorn :as sinkhorn]))
 
 (defn- abs* [x] (if (neg? x) (- x) x))
