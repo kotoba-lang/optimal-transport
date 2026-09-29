@@ -111,7 +111,7 @@ No adapter code is required in between.
 First-class runtime is **ClojureScript** (browser/Node), per this org's
 2026-07-10 runtime-priority policy (`kotoba wasm` > `clojurewasm` >
 ClojureScript > `nbb`, JVM/`bb` demoted to compat-only,
-`com-junkawasaki/root` `CLAUDE.md`). All math (`optimal_transport/
+`com-junkawasaki/root` `AGENTS.md`). All math (`optimal_transport/
 sinkhorn.cljc`) uses `#?(:clj ... :cljs ...)` reader conditionals for
 `Math/exp`/`Math/log`/`Math/abs` vs. `js/Math.exp`/`js/Math.log`/
 `js/Math.abs`, the same convention as `character.math`. Tests run via
